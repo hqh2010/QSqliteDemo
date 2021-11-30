@@ -1,0 +1,16 @@
+// PB协议版本
+syntax = "proto3"; 
+message Package {
+    string appId = 1;
+    string appName = 2;
+    string appVer = 3;
+    string appArch = 4;
+    string runtime = 5;
+    string repoName = 6;
+    string appType = 7;
+    string appDesc= 8;
+    string appUrl= 9;
+    // protobuf 支持C++数据类型包括复杂类型
+    // repeated string arch = 4;  
+    // Permissions permissions = 5;
+}

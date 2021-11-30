@@ -1,0 +1,22 @@
+Source: ostreehelper
+Section: admin
+Priority: optional
+Maintainer: demo Packages Builder <packages@demo.org>
+Build-Depends:
+ debhelper (>= 11),
+ cmake,
+ libgtest-dev,
+ qtbase5-dev,
+ pkg-config,
+ libglib2.0-dev,
+ libostree-dev,
+ libprotobuf-dev,
+ protobuf-compiler
+Standards-Version: 4.1.3
+Homepage: https://www.baidu.org
+
+Package: demo-ostreehelper
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: ostreehelper for demo.
+ ostreehelper for demo packagemanager.

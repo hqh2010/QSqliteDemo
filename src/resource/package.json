@@ -1,0 +1,11 @@
+{
+ "appId": "com.ugetdm.uget",
+ "appName": "uget",
+ "appVer": "2.2.1",
+ "appArch": "x86_64",
+ "runtime": "com.demo.Runtime/20/x86_64",
+ "repoName": "repo",
+ "appType": "user",
+ "appDesc": "Uget是一个下载管理器，它支持断点续传、监视剪贴板、Firefox插件、分类/批量下载，还支持从HTML中导入下载地址、命令行下载等功能。",
+ "appUrl": "https://gerrit.demo.com/c/demo"
+}
