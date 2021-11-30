@@ -32,14 +32,14 @@ bool dirExists(const QString &path)
 
 void Qsqltest()
 {
-    const QString dbPath = "/deepin/linglong/layers/";
-    //添加数据库驱动，并指定连接名称linglong_package_connection
+    const QString dbPath = "/tmp/debug";
+    //添加数据库驱动，并指定连接名称sqlite_test_connection
     QSqlDatabase dbConn;
-    if (QSqlDatabase::contains("linglong_package_connection")) {
-        dbConn = QSqlDatabase::database("linglong_package_connection");
+    if (QSqlDatabase::contains("sqlite_test_connection")) {
+        dbConn = QSqlDatabase::database("sqlite_test_connection");
     } else {
-        dbConn = QSqlDatabase::addDatabase("QSQLITE", "linglong_package_connection");
-        dbConn.setDatabaseName(dbPath + "AppInstalledInfo.db");
+        dbConn = QSqlDatabase::addDatabase("QSQLITE", "sqlite_test_connection");
+        dbConn.setDatabaseName(dbPath + "StudentInfo.db");
     }
     if (!dbConn.open()) {
         qCritical() << "open DB failed";
@@ -154,7 +154,7 @@ void outputMessage(QtMsgType type, const QMessageLogContext &context, const QStr
 
 int main(int argc, char **argv)
 {
-    if (dirExists("/tmp/ll-debug")) {
+    if (dirExists("/tmp/debug")) {
         qInstallMessageHandler(outputMessage);
     } else {
         qSetMessagePattern(
