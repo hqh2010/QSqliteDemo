@@ -6,6 +6,10 @@ This is a demo for qsqlite.
 
 sudo apt-get install sqlitebrowser
 
+注意：qsqlite依赖于libqsqlite.so，在debian上面必须安装libqt5sql5-sqlite软件包
+
+否则上报QSqlDatabase: QSQLITE driver not loaded错误
+
 # 使用方式
 
 mkdir build
