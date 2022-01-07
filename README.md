@@ -33,3 +33,7 @@ https://stackoverflow.com/questions/9078531/qsqlqueryprepare-database-not-open
 https://www.cnblogs.com/xia-weiwen/archive/2017/05/04/6806709.html
 
 https://github.com/hqh2010/Sqlite3Demo
+
+qDebug日志开关
+
+https://www.qedev.com/linux/339315.html
