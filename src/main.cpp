@@ -158,7 +158,7 @@ int main(int argc, char **argv)
         qInstallMessageHandler(outputMessage);
     } else {
         qSetMessagePattern(
-            "%{time yyyy-MM-dd hh:mm:ss.zzz} [%{type}] [File:%{file} Line:%{line} Function:%{function}] %{message}");
+            "%{time yyyy-MM-dd hh:mm:ss.zzz} [%{appname}] [%{type}] [File:%{file} Line:%{line} Function:%{function}] %{message}");
     }
     Qsqltest();
 }
